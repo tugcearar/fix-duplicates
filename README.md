@@ -9,6 +9,4 @@
 
 - In the some of the native Huawei ML libraries, there exist multiple .aar model files which have a `R.txt` file.*R-libraryName.txt*.
 
-[Nuget](https://www.nuget.org/packages/Xamarin.FixAars/1.0.0) 
-
-- If you have a fix, please add it and open a MR. 
+Available on [Nuget](https://www.nuget.org/packages/Xamarin.FixAars/1.0.0) 
