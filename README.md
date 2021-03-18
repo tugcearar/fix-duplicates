@@ -14,7 +14,5 @@
   ```
   R-libraryName.txt
   ```
- file.
   
-
 Available on [Nuget](https://www.nuget.org/packages/Xamarin.FixAars/1.0.0) 
