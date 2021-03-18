@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard20</TargetFramework>
+    <AssemblyName>fix-duplicates</AssemblyName>
+
+    <PackageId>Xamarin.FixAars</PackageId>
+    <Title>Xamarin Build-time Aar Library Fix</Title>
+    <PackageVersion>1.0.0</PackageVersion>
+    <Authors>Tugce Arar</Authors>
+    <Owners>Tugce Arar</Owners>
+    <PackageProjectUrl>https://github.com/stugcearar/fix-duplicates</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/stugcearar/fix-duplicates/LICENSE</PackageLicenseUrl>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Description>Support for unpacking archives and edit when building MSBuild projects</Description> 
+    <RepositoryUrl>https://github.com/stugcearar/fix-duplicates</RepositoryUrl> 
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- build --> 
+    <None Include="$(TargetPath)" Pack="True" PackagePath="build\fix-duplicates.dll" />
+    <None Include="$(PkgMicrosoft_Win32_Registry)\runtimes\win\lib\netstandard2.0\Microsoft.Win32.Registry.dll" Visible="False" Pack="True" PackagePath="build\Microsoft.Win32.Registry.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Build.Framework" Version="16.0.461" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.Build.Utilities.Core" Version="16.0.461" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.Win32.Registry" Version="4.7.0.0" PrivateAssets="all" GeneratePathProperty="true" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" PrivateAssets="all" GeneratePathProperty="true" />
+  </ItemGroup>
+</Project>
