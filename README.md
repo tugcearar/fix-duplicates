@@ -7,14 +7,14 @@
   We are working around this by detecting files named like this, and renaming them to some unique value
   in this case, 
   ```
-   *r-libraryName*
+   r-libraryName
    ```
 
-- In the some of the native Huawei ML libraries, there exist multiple .aar model files which have a 
+- In the some of the native libraries, there exist multiple .aar libraries which have a R.txt files. Rename them to
   ```
-  R.txt
+  R-libraryName.txt
   ```
  file.
-  *R-libraryName.txt*.
+  
 
 Available on [Nuget](https://www.nuget.org/packages/Xamarin.FixAars/1.0.0) 
