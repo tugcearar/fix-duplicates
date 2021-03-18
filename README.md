@@ -1,4 +1,4 @@
-# Xamarin Android Binding .aar classes and R.txt duplicate Fix
+# Xamarin Android Binding Fix duplicates r-class and R.txt files
 
 - In the some of the native android libraries, there exist multiple .aar files which have a `libs/r-classes.jar` file.
   In Xamarin.Android, there is a Task **"CheckDuplicateJavaLibraries"** which inspects jar files being pulled in from .aar files
