@@ -5,8 +5,16 @@
   in assemblies to see if there exist any files with the same name but different content, and will throw an error if it finds any.
   However, for us, it is perfectly valid to have this scenario and we should not see an error.
   We are working around this by detecting files named like this, and renaming them to some unique value
-  in this case, *r-libraryName*.
+  in this case, 
+  ```
+   *r-libraryName*
+   ```
 
-- In the some of the native Huawei ML libraries, there exist multiple .aar model files which have a `R.txt` file.*R-libraryName.txt*.
+- In the some of the native Huawei ML libraries, there exist multiple .aar model files which have a 
+  ```
+  R.txt
+  ```
+ file.
+  *R-libraryName.txt*.
 
 Available on [Nuget](https://www.nuget.org/packages/Xamarin.FixAars/1.0.0) 
