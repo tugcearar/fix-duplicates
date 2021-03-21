@@ -4,8 +4,6 @@
   In Xamarin.Android, there is a Task **"CheckDuplicateJavaLibraries"** which inspects jar files being pulled in from .aar files
   in assemblies to see if there exist any files with the same name but different content, and will throw an error if it finds any.
   However, for us, it is perfectly valid to have this scenario and we should not see an error.
-  We are working around this by detecting files named like this, and renaming them to some unique value
-  in this case, 
   ```
    r-libraryName
    ```
